@@ -85,7 +85,7 @@ eval("module.exports = function () {\r\n  $('.search-item').on('click', function
   \**********************************************/
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
-eval("const slick = __webpack_require__(/*! slick-carousel */ \"./node_modules/slick-carousel/slick/slick.js\");\r\n\r\nmodule.exports = function () {\r\n  $('.single-item').slick({\r\n    // infinite: true,\r\n    // autoplay: true,\r\n    // speed: 3000,\r\n    slidesToShow: 1,\r\n    arrows: false,\r\n    dots: false,\r\n  });\r\n};\r\n\n\n//# sourceURL=webpack://furnicing-shop/./src/js/modules/testimonial-slider.js?");
+eval("const slick = __webpack_require__(/*! slick-carousel */ \"./node_modules/slick-carousel/slick/slick.js\");\r\n\r\nmodule.exports = function () {\r\n  $('.single-item').slick({\r\n    infinite: true,\r\n    autoplay: true,\r\n    autoplaySpeed: 5000,\r\n    speed: 3000,\r\n    slidesToShow: 1,\r\n    arrows: false,\r\n    dots: false,\r\n  });\r\n};\r\n\n\n//# sourceURL=webpack://furnicing-shop/./src/js/modules/testimonial-slider.js?");
 
 /***/ })
 
