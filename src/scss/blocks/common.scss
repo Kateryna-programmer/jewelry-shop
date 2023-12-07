@@ -9,3 +9,49 @@
   width: 100%;
   margin: auto;
 }
+.title-wrapper {
+  text-align: center;
+}
+.common-title {
+  display: inline-block;
+  font-family: Playfair Display, serif;
+  font-size: 30px;
+  font-weight: 700;
+
+  margin: 30px 0;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 1;
+  @media (max-width: 600px) {
+    font-size: 24px;
+  }
+
+  &::before {
+    background: $pseudo-color;
+    content: '';
+    height: 2px;
+    left: -81px;
+    position: absolute;
+    top: 19px;
+    width: 60px;
+
+    @media (max-width: 600px) {
+      left: -50px;
+      width: 35px;
+    }
+  }
+  &::after {
+    background: $pseudo-color;
+    content: '';
+    height: 2px;
+    position: absolute;
+    right: -81px;
+    top: 19px;
+    width: 60px;
+
+    @media (max-width: 600px) {
+      right: -50px;
+      width: 35px;
+    }
+  }
+}

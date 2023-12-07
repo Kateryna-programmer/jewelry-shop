@@ -6,3 +6,6 @@ openCloseBurger();
 
 const openHeroSlider = require('./modules/hero-slider');
 openHeroSlider();
+
+const fetchNewArrival = require('./modules/new-arrival-fetch');
+fetchNewArrival();
