@@ -9,3 +9,6 @@ openHeroSlider();
 
 const fetchNewArrival = require('./modules/new-arrival-fetch');
 fetchNewArrival();
+
+const showReviewSlider = require('./modules/testimonial-slider');
+showReviewSlider();
