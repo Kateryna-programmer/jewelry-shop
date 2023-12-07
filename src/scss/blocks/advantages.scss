@@ -1,0 +1,66 @@
+.advantages {
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 60px 10px 30px 10px;
+  }
+  &__car {
+    color: $car-color;
+    font-size: 36px;
+  }
+  &__item {
+    display: flex;
+    flex: 0 0 33.333333%;
+  }
+  &__text {
+    width: 60%;
+    margin-left: 30px;
+  }
+  &__title {
+    font-size: 25px;
+    margin-bottom: 9px;
+    font-family: Playfair Display, serif;
+  }
+  &__desc {
+    color: $adv-color;
+  }
+  &__bottom {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  &__bottom-image {
+    display: inline-block;
+    padding: 0 15px;
+    max-width: 50%;
+  }
+}
+@media (max-width: 600px) {
+  .advantages {
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-bottom: 10px;
+    }
+    &__item {
+      margin-bottom: 30px;
+    }
+    &__title {
+      font-size: 22px;
+    }
+    &__text {
+      font-size: 13px;
+      width: 100%;
+      margin-left: 20px;
+    }
+    &__bottom {
+      margin-top: 0;
+    }
+    &__bottom-image {
+      display: inline-block;
+      padding: 15px;
+      max-width: 100%;
+      margin: auto;
+    }
+  }
+}
