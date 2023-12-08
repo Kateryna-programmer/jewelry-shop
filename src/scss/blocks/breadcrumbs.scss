@@ -1,0 +1,45 @@
+.breadcrumbs {
+  background: url(../../image/breadcrumbs-bg.jpg);
+  text-align: center;
+  padding: 50px 10px;
+
+  span {
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    text-transform: capitalize;
+    font-family: Playfair Display, serif;
+  }
+
+  &__link {
+    display: inline-block;
+    color: #fff;
+    transition: all 0.3s ease-out;
+    padding-right: 18px;
+    position: relative;
+
+    &::after {
+      background-color: #fff;
+      content: '';
+      font-size: 8px;
+      height: 1px;
+      position: absolute;
+      right: 0;
+      top: 10px;
+      transform: rotate(-63deg);
+      width: 13px;
+    }
+
+    &:hover,
+    &:focus {
+      color: #686868;
+    }
+  }
+}
