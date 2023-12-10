@@ -35,7 +35,7 @@ eval("var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPAC
   \************************/
 /***/ (function(__unused_webpack_module, __unused_webpack_exports, __webpack_require__) {
 
-eval("const showSearchField = __webpack_require__(/*! ./modules/search */ \"./src/js/modules/search.js\");\r\nshowSearchField();\r\n\r\nconst openCloseBurger = __webpack_require__(/*! ./modules/burger */ \"./src/js/modules/burger.js\");\r\nopenCloseBurger();\r\n\r\nconst openHeroSlider = __webpack_require__(/*! ./modules/hero-slider */ \"./src/js/modules/hero-slider.js\");\r\nopenHeroSlider();\r\n\r\nconst fetchNewArrival = __webpack_require__(/*! ./modules/new-arrival-fetch */ \"./src/js/modules/new-arrival-fetch.js\");\r\nfetchNewArrival();\r\n\r\nconst showReviewSlider = __webpack_require__(/*! ./modules/testimonial-slider */ \"./src/js/modules/testimonial-slider.js\");\r\nshowReviewSlider();\r\n\r\nconst changeNewsPage = __webpack_require__(/*! ./modules/news-page-pagination */ \"./src/js/modules/news-page-pagination.js\");\r\nchangeNewsPage();\r\n\n\n//# sourceURL=webpack://furnicing-shop/./src/js/main.js?");
+eval("const showSearchField = __webpack_require__(/*! ./modules/search */ \"./src/js/modules/search.js\");\r\nshowSearchField();\r\n\r\nconst openCloseBurger = __webpack_require__(/*! ./modules/burger */ \"./src/js/modules/burger.js\");\r\nopenCloseBurger();\r\n\r\nconst openHeroSlider = __webpack_require__(/*! ./modules/hero-slider */ \"./src/js/modules/hero-slider.js\");\r\nopenHeroSlider();\r\n\r\nconst fetchNewArrival = __webpack_require__(/*! ./modules/new-arrival-fetch */ \"./src/js/modules/new-arrival-fetch.js\");\r\nfetchNewArrival();\r\n\r\nconst showReviewSlider = __webpack_require__(/*! ./modules/testimonial-slider */ \"./src/js/modules/testimonial-slider.js\");\r\nshowReviewSlider();\r\n\r\nconst changeNewsPage = __webpack_require__(/*! ./modules/news-page-pagination */ \"./src/js/modules/news-page-pagination.js\");\r\nchangeNewsPage();\r\n\r\nconst openHeaderShop = __webpack_require__(/*! ./modules/header-open-shop */ \"./src/js/modules/header-open-shop.js\");\r\nopenHeaderShop();\r\n\n\n//# sourceURL=webpack://furnicing-shop/./src/js/main.js?");
 
 /***/ }),
 
@@ -46,6 +46,16 @@ eval("const showSearchField = __webpack_require__(/*! ./modules/search */ \"./sr
 /***/ (function(module) {
 
 eval("module.exports = function () {\r\n  $('.burger').on('click', function () {\r\n    $(this).hide();\r\n    $('.navbar').css({ display: 'block', height: '100vh', opacity: '1' });\r\n    $('.burger-close').css({ display: 'block', opacity: '1' });\r\n  });\r\n\r\n  $('.burger-close').on('click', function () {\r\n    $('.burger').show();\r\n    $('.search-cart').show();\r\n    $('.navbar, .burger-close').css({ display: 'none' });\r\n  });\r\n};\r\n\n\n//# sourceURL=webpack://furnicing-shop/./src/js/modules/burger.js?");
+
+/***/ }),
+
+/***/ "./src/js/modules/header-open-shop.js":
+/*!********************************************!*\
+  !*** ./src/js/modules/header-open-shop.js ***!
+  \********************************************/
+/***/ (function(module) {
+
+eval("module.exports = function () {\r\n  $('.navbar__item-link.toggle-shop')\r\n    .on('mouseenter', function () {\r\n      if ($(window).width() >= 900) {\r\n        $('.navbar__shop').addClass('visible');\r\n      }\r\n    })\r\n    .on('mouseleave', function () {\r\n      $('.navbar__shop').removeClass('visible');\r\n    });\r\n\r\n  $('.navbar__shop')\r\n    .on('mouseenter', function () {\r\n      if ($(window).width() >= 900) {\r\n        $('.navbar__shop').addClass('visible');\r\n      }\r\n    })\r\n    .on('mouseleave', function () {\r\n      $('.navbar__shop').removeClass('visible');\r\n    });\r\n\r\n  $(window).resize(function () {\r\n    if ($(window).width() < 900) {\r\n      $('.navbar__shop').removeClass('visible');\r\n    }\r\n  });\r\n};\r\n\n\n//# sourceURL=webpack://furnicing-shop/./src/js/modules/header-open-shop.js?");
 
 /***/ }),
 

@@ -15,3 +15,6 @@ showReviewSlider();
 
 const changeNewsPage = require('./modules/news-page-pagination');
 changeNewsPage();
+
+const openHeaderShop = require('./modules/header-open-shop');
+openHeaderShop();

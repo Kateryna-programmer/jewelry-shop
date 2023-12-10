@@ -22,6 +22,57 @@
       color: $header-hover;
     }
   }
+
+  &__shop {
+    visibility: hidden;
+    opacity: 0;
+    z-index: -1;
+    background: #fff none repeat scroll 0 0;
+    box-shadow: 0 0 15px 0.08px #00000026;
+    position: absolute;
+    left: 0;
+    top: 172px;
+    padding: 35px 10px 40px;
+    transition: all 0.3s ease 0s;
+    width: 100%;
+    z-index: 999;
+  }
+  &__shop-wrapper {
+    display: flex;
+    justify-content: space-around;
+  }
+  &__shop-item {
+    & li a {
+      text-decoration: underline;
+      display: inline-block;
+      margin: 5px 0;
+      transition: color 0.3s ease;
+      font-size: 13px;
+
+      &:hover,
+      &:focus {
+        color: $header-hover;
+      }
+    }
+  }
+
+  &__shop-link {
+    font-family: 'Playfair Display', serif;
+    display: inline-block;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+
+    &:hover,
+    &:focus {
+      color: $header-hover;
+    }
+  }
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+  z-index: 99;
 }
 .search-cart {
   display: flex;
@@ -170,5 +221,12 @@
   .burger,
   .burger-close {
     display: none;
+  }
+}
+
+.navbar__item-link.open-shop:hover {
+  .navbar__shop {
+    display: block;
+    visibility: visible;
   }
 }
