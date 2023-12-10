@@ -18,3 +18,6 @@ changeNewsPage();
 
 const openHeaderShop = require('./modules/header-open-shop');
 openHeaderShop();
+
+const createShopCard = require('./modules/shop-page-card');
+createShopCard();
