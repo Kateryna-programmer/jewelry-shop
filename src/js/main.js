@@ -12,3 +12,6 @@ fetchNewArrival();
 
 const showReviewSlider = require('./modules/testimonial-slider');
 showReviewSlider();
+
+const changeNewsPage = require('./modules/news-page-pagination');
+changeNewsPage();
