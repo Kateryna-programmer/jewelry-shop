@@ -9,7 +9,7 @@ module.exports = function () {
           const card = $('<div class="new-arrival__card"></div>');
 
           const cardImgLink = $(
-            '<a class="new-arrival__card-link" href=""></a>'
+            '<a class="new-arrival__card-img-link" href=""></a>'
           );
           const cardImg = $(
             '<img class="new-arrival__card-image" alt="jewelry">'
@@ -25,7 +25,7 @@ module.exports = function () {
           cardText.append(cardPrice);
 
           const cardTitleLink = $(
-            '<a href="" class="new-arrival__card-link"></a>'
+            '<a href="" class="new-arrival__card-title-link"></a>'
           );
           const cardTitle = $('<h4 class="new-arrival__card-text_title"></h4>');
           cardTitle.text(product.title);
@@ -46,14 +46,23 @@ module.exports = function () {
 
           hoverIcons.css('opacity', '0');
 
-          cardImgLink.hover(
-            function () {
+          cardTitleLink.on({
+            mouseenter: function () {
               hoverIcons.css({ opacity: '1', transition: '0.4s ease' });
             },
-            function () {
+            mouseleave: function () {
               hoverIcons.css('opacity', '0');
-            }
-          );
+            },
+          });
+
+          cardImgLink.on({
+            mouseenter: function () {
+              hoverIcons.css({ opacity: '1', transition: '0.4s ease' });
+            },
+            mouseleave: function () {
+              hoverIcons.css('opacity', '0');
+            },
+          });
         }
       });
     })

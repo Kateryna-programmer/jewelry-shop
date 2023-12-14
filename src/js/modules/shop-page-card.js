@@ -72,14 +72,15 @@ module.exports = function () {
       'ROSE GOLD CHARM',
       'PEARL BROOCH',
     ];
-
     const container = $('.shop__container');
     const totalItems = jewelryNames.length;
     let currentPage = 1;
 
     function generateProductCard(index) {
       const card = $('<div class="shop__card"></div>');
-      const cardImgLink = $('<a class="shop__card-link" href=""></a>');
+      const cardImgLink = $(
+        '<a class="shop__card-link" href="./product-page.html"></a>'
+      );
       const cardImg = $(
         `<img class="shop__card-image" alt="jewelry" src="${imageUrls[index]}">`
       );
@@ -87,7 +88,9 @@ module.exports = function () {
       const cardPrice = $(
         `<p class="shop__card-text_price">$${generateRandomPrice()}</p>`
       );
-      const cardTitleLink = $('<a href="" class="shop__card-link"></a>');
+      const cardTitleLink = $(
+        '<a href="./product-page.html" class="shop__card-link"></a>'
+      );
       const cardTitle = $(
         `<h4 class="shop__card-text_title">${jewelryNames[index]}</h4>`
       );
@@ -113,6 +116,23 @@ module.exports = function () {
           hoverIcons.css('opacity', '0');
         }
       );
+      $('.shop__card').on('click', function () {
+        const productName = $(this).find('.shop__card-text_title').text();
+        const productIndex = jewelryNames.indexOf(productName);
+        if (productIndex !== -1) {
+          const productData = {
+            imageUrl: imageUrls[productIndex],
+            productName: jewelryNames[productIndex],
+            price: generateRandomPrice(),
+            description:
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+          };
+          localStorage.setItem('selectedProduct', JSON.stringify(productData));
+          window.location.href = './product-page.html';
+        } else {
+          console.error('Товар не найден:', productName);
+        }
+      });
 
       return card;
     }

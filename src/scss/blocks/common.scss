@@ -19,7 +19,6 @@
   font-family: Playfair Display, serif;
   font-size: 30px;
   font-weight: 700;
-
   margin: 30px 0;
   position: relative;
   text-transform: uppercase;
@@ -55,25 +54,5 @@
       right: -50px;
       width: 35px;
     }
-  }
-}
-
-.hover-icons {
-  max-width: 215px;
-  width: 100%;
-  position: absolute;
-  background-color: #fff;
-  border-radius: 50px;
-  display: inline-block;
-  line-height: 1;
-  text-align: center;
-  padding: 13px 26px 10px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  box-shadow: 0 0 15px #0000001a;
-  & i {
-    font-size: 24px;
-    margin: 0 10px;
   }
 }

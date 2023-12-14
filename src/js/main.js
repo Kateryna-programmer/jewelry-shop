@@ -21,3 +21,15 @@ openHeaderShop();
 
 const createShopCard = require('./modules/shop-page-card');
 createShopCard();
+
+const generateProductCard = require('./modules/product-card');
+generateProductCard();
+
+const createProductSlider = require('./modules/product-slider');
+createProductSlider();
+
+const changeProductCardDetails = require('./modules/product-card-additional');
+changeProductCardDetails();
+
+const makeProductHover = require('./modules/product-card-hover');
+makeProductHover();
