@@ -33,3 +33,12 @@ changeProductCardDetails();
 
 const makeProductHover = require('./modules/product-card-hover');
 makeProductHover();
+
+const clickNewsLink = require('./modules/news-page-link');
+clickNewsLink();
+
+const toNewPage = require('./modules/new-page-link');
+toNewPage();
+
+const toTopNewPage = require('./modules/new-page-to-top');
+toTopNewPage();
