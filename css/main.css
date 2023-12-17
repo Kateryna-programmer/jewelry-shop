@@ -611,7 +611,7 @@ button {
 }
 
 .subscribe__btn {
-  background: rgba(0, 0, 0, 0) url(image/subscribe-icon.png) no-repeat scroll
+  background: rgba(0, 0, 0, 0) url(../image/subscribe-icon.png) no-repeat scroll
     right 0 center;
   display: inline-block;
   width: 37px;
@@ -814,7 +814,7 @@ button {
 }
 
 .footer-contact__form button {
-  background: rgba(0, 0, 0, 0) url(image/email.png) no-repeat scroll right 0
+  background: rgba(0, 0, 0, 0) url(../image/email.png) no-repeat scroll right 0
     center;
   width: 37px;
   height: 44px;
@@ -838,7 +838,7 @@ button {
 }
 
 .breadcrumbs {
-  background: url(image/breadcrumbs-bg.jpg);
+  background: url(../image/breadcrumbs-bg.jpg);
   text-align: center;
   padding: 50px 10px;
 }
