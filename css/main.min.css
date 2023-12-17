@@ -525,7 +525,7 @@ label {
   outline: 0;
 }
 .subscribe__btn {
-  background: url(../../image/subscribe-icon.png) no-repeat right 0 center;
+  background: url(image/subscribe-icon.png) no-repeat right 0 center;
   display: inline-block;
   width: 37px;
   height: 56px;
@@ -691,7 +691,7 @@ label {
   position: relative;
 }
 .footer-contact__form button {
-  background: url(../../image/email.png) no-repeat right 0 center;
+  background: url(image/email.png) no-repeat right 0 center;
   width: 37px;
   height: 44px;
   border: 0;
@@ -711,7 +711,7 @@ label {
   width: 33px;
 }
 .breadcrumbs {
-  background: url(../../image/breadcrumbs-bg.jpg);
+  background: url(breadcrumbs-bg.jpg);
   text-align: center;
   padding: 50px 10px;
 }
