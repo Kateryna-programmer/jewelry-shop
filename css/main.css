@@ -14,7 +14,7 @@ ul {
   padding: 0;
 }
 
-input[type=checkbox] {
+input[type='checkbox'] {
   cursor: pointer;
   display: inline-block;
 }
@@ -29,7 +29,7 @@ button {
 
 * {
   color: #383838;
-  font-family: "Rubik", sans-serif;
+  font-family: 'Rubik', sans-serif;
 }
 
 .container {
@@ -54,7 +54,7 @@ button {
 
 .common-title::before {
   background: #9b9b9b;
-  content: "";
+  content: '';
   height: 2px;
   left: -81px;
   position: absolute;
@@ -64,7 +64,7 @@ button {
 
 .common-title::after {
   background: #9b9b9b;
-  content: "";
+  content: '';
   height: 2px;
   position: absolute;
   right: -81px;
@@ -151,7 +151,7 @@ button {
 }
 
 .navbar__shop-link {
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   display: inline-block;
   margin-bottom: 10px;
   -webkit-transition: color 0.3s ease;
@@ -262,7 +262,7 @@ button {
 
 .cart:hover:after {
   background: #fff;
-  content: "Your cart is currently empty";
+  content: 'Your cart is currently empty';
   position: absolute;
   top: 50px;
   right: 0px;
@@ -302,7 +302,7 @@ button {
 }
 
 .hero__title {
-  font: 400 46px/80px "Playfair Display", serif;
+  font: 400 46px/80px 'Playfair Display', serif;
   color: #444444;
   text-transform: uppercase;
 }
@@ -611,7 +611,8 @@ button {
 }
 
 .subscribe__btn {
-  background: rgba(0, 0, 0, 0) url(../../image/subscribe-icon.png) no-repeat scroll right 0 center;
+  background: rgba(0, 0, 0, 0) url(image/subscribe-icon.png) no-repeat scroll
+    right 0 center;
   display: inline-block;
   width: 37px;
   height: 56px;
@@ -752,7 +753,7 @@ button {
 .footer-contact__title::before {
   background: #000;
   bottom: 0;
-  content: "";
+  content: '';
   height: 2px;
   left: 0;
   position: absolute;
@@ -813,7 +814,8 @@ button {
 }
 
 .footer-contact__form button {
-  background: rgba(0, 0, 0, 0) url(../../image/email.png) no-repeat scroll right 0 center;
+  background: rgba(0, 0, 0, 0) url(image/email.png) no-repeat scroll right 0
+    center;
   width: 37px;
   height: 44px;
   border: none;
@@ -836,7 +838,7 @@ button {
 }
 
 .breadcrumbs {
-  background: url(../../image/breadcrumbs-bg.jpg);
+  background: url(image/breadcrumbs-bg.jpg);
   text-align: center;
   padding: 50px 10px;
 }
@@ -865,7 +867,7 @@ button {
 
 .breadcrumbs__link::after {
   background: #fff;
-  content: "";
+  content: '';
   font-size: 8px;
   height: 1px;
   position: absolute;
@@ -1118,7 +1120,7 @@ button {
 
 .form__btn button::before,
 .form__btn button::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   bottom: 0;
@@ -1620,7 +1622,7 @@ button {
 
 .new-page__main-info-first::after {
   background: #b6b6b6;
-  content: "";
+  content: '';
   font-size: 8px;
   height: 13px;
   position: absolute;
@@ -1733,7 +1735,7 @@ button {
   margin-bottom: 16px;
 }
 
-.shop__sidebar input[type=checkbox] {
+.shop__sidebar input[type='checkbox'] {
   margin: 0 5px 0 0;
 }
 
@@ -2096,7 +2098,8 @@ button {
 }
 
 .product__text-add-to-cart button {
-  background: linear-gradient(#343a40, #343a40) no-repeat 50% 50%/0% 100% #c09578;
+  background: linear-gradient(#343a40, #343a40) no-repeat 50% 50%/0% 100%
+    #c09578;
   cursor: pointer;
   border: none;
   color: #fff;
@@ -2622,7 +2625,7 @@ button {
   }
 
   .one-item::after {
-    content: "";
+    content: '';
     z-index: 100;
     position: absolute;
     top: 0;
